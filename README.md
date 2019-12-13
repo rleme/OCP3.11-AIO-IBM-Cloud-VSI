@@ -144,10 +144,10 @@ Service Catalog Install      : Complete (0:02:40)
 
 #show state
 
-[origin@masterokd ~]$ oc get nodes 
+[origin@master ~]$ oc get nodes 
 NAME                         STATUS    ROLES                  AGE       VERSION
 masterokd.example.net   Ready     compute,infra,master   3d        v1.11.0+d4cacc0
-[origin@masterokd ~]$ 
+[origin@master ~]$ 
 
 
 # show state with labels
@@ -155,6 +155,6 @@ masterokd.example.net   Ready     compute,infra,master   3d        v1.11.0+d4cac
 [origin@master log]$ 
 oc get nodes --show-labels=true [origin@maste log]$ oc get nodes --show-labels=true 
 NAME                         STATUS    ROLES                  AGE       VERSION           LABELS
-master.example.net   Ready     compute,infra,master   3d        v1.11.0+d4cacc0   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/hostname=masterokd.rcleme170379.net,node-role.kubernetes.io/compute=true,node-role.kubernetes.io/infra=true,node-role.kubernetes.io/master=true
+master.example.net   Ready     compute,infra,master   3d        v1.11.0+d4cacc0   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/hostname=master.example.net,node-role.kubernetes.io/compute=true,node-role.kubernetes.io/infra=true,node-role.kubernetes.io/master=true
 [origin@master log]$ 
 
