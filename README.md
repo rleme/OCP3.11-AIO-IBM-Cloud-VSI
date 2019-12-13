@@ -101,11 +101,6 @@ master.example.net
 [nodes]
 master.example.net openshift_node_group_name='node-config-all-in-one'
 
-# if you'd like to separate Master node feature and Infra node feature, set like follows
-# master.example.net openshift_node_group_name='node-config-master'
-# node01.srv.world openshift_node_group_name='node-config-compute'
-# node02.srv.world openshift_node_group_name='node-config-infra'
-
 # run Prerequisites Playbook
 [origin@masterokd ~]$ 
 
