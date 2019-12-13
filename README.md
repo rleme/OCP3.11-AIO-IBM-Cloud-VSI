@@ -93,7 +93,7 @@ openshift_master_default_subdomain=apps.example.net
 openshift_docker_insecure_registries=172.30.0.0/16
 
 [masters]
-master.example.net hostname="masterokd.example.net" public_hostname="master.example.net" openshift_public_hostname="master.example.net"
+master.example.net hostname="master.example.net" public_hostname="master.example.net" openshift_public_hostname="master.example.net"
 
 [etcd]
 master.example.net
@@ -102,7 +102,7 @@ master.example.net
 master.example.net openshift_node_group_name='node-config-all-in-one'
 
 # run Prerequisites Playbook
-[origin@masterokd ~]$ 
+[origin@master ~]$ 
 
 [origin@master ~]$ ansible-playbook /usr/share/ansible/openshift-ansible/playbooks/prerequisites.yml 
 ................
